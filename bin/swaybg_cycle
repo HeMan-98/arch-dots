@@ -1,0 +1,30 @@
+#!/bin/sh
+
+IFS="
+"
+wallpaper_directory=$1
+duration=$2
+
+[ -z "$wallpaper_directory" ] && echo "Usage: $(basename $0) [DIRECTORY] [DURATION]" && exit 1
+[ ! -d "$wallpaper_directory" ] && echo "Directory \'$wallpaper_directory\' does not exist" && exit 1
+[ -z "$duration" ] && duration=600
+
+next_wall() {
+    kill $sleep_pid
+}
+trap next_wall USR1
+
+while true; do
+    file=$(ls "$wallpaper_directory" | shuf -n 1)
+    current_swaybg_pid=$(pgrep -x swaybg)
+    wallpaper="$wallpaper_directory/$file"
+    format=$(file "$wallpaper" | cut -d " " -f 2)
+    [ "$format" = "JPEG" ] || [ "$format" = "PNG" ] \
+        && echo "Setting wallpaper to $wallpaper, format $format, sleeping for $duration. seconds" \
+        && sh -c "swaybg -o \"*\" -i $wallpaper -m fill -c \"#282828\" > /dev/null 2>&1 &" \
+        && sleep 1 \
+        && kill $current_swaybg_pid
+    sleep $duration &
+    sleep_pid=$!
+    wait $sleep_pid
+done

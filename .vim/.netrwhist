@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/hemanth/.config/zathura'
+let g:netrw_dirhist_3='/home/hemanth/.config/wofi'
+let g:netrw_dirhist_2='/home/hemanth/Desktop'
+let g:netrw_dirhist_1='/proc/685/fd'
+let g:netrw_dirhist_0='/home/hemanth/Desktop'
+let g:netrw_dirhist_9='/home/hemanth'
+let g:netrw_dirhist_8='/home/hemanth/Desktop'
+let g:netrw_dirhist_7='/home/hemanth/.config/ncmpcpp'
+let g:netrw_dirhist_6='/home/hemanth/Desktop'
+let g:netrw_dirhist_5='/home/hemanth/.local/share/virtualenvs/market_watch-crOrBjkR/lib/python3.12/site-packages/jugaad_data/nse'

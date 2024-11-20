@@ -1,0 +1,35 @@
+/* Wofi Config GruvBox*/ 
+
+* {
+    border-radius: 5px;
+}
+
+window {
+    font-size: 20px;
+    font-family:"Iosevka";
+    background-color: #282828;
+    color: #ebdbb2;
+    border: 3px solid #ebdbb2;
+}
+
+#entry{
+    padding: 0.25em;
+}
+
+#entry:selected{
+    background-color: #504945;
+    background: linear-gradient(90deg, #504945, #282828);
+    margin: 3px;
+}
+
+#text:selected{
+    background-color: rgba(0,0,0,0);
+    color: #ebdbd2;
+}
+
+#input{
+    background-color: #3c3836;
+    color: #d5c4a1;
+    padding: 0.25em;
+    margin: 3px;
+}

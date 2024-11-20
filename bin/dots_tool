@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Copying the Reqd files to the dotfiles staging area
+
+# Configs - mpd, ncmpcpp, sway, waybar, wofi, mako, gtk3, foot, zathura, walls, starship
+if [ ! -d ~/dev/dotfiles/config ]; then
+    mkdir -p ~/dev/dotfiles/config
+fi
+cp -rf ~/.config/{mpd,ncmpcpp,sway,waybar,wofi,mako,gtk-3.0,foot,zathura,walls,starship.toml} ~/dev/dotfiles/config/
+
+# Bins
+if [ ! -d ~/dev/dotfiles/bin ]; then
+    mkdir -p ~/dev/dotfiles/bin
+fi
+cp -rf ~/.local/bin/* ~/dev/dotfiles/bin/
+
+# Home - Vim, Bash, sample.md
+cp -rf ~/{.vim,.vimrc,.bashrc,.sample.md} ~/dev/dotfiles/
+
+# Pacman
+pacman -Q > ~/dev/dotfiles/pacman.packages
+pacman -Qe > ~/dev/dotfiles/pacman_explicit.packages
+# Paru
+paru -Qm > ~/dev/dotfiles/paru_only.packages
+
+echo "Done !"
