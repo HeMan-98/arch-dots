@@ -23,4 +23,10 @@ pacman -Qe > ~/dev/dotfiles/pacman_explicit.packages
 # Paru
 paru -Qm > ~/dev/dotfiles/paru_only.packages
 
+# Cascade Firefox
+if [ ! -d ~/dev/dotfiles/firefox/chrome ]; then
+    mkdir -p ~/dev/dotfiles/firefox/chrome
+fi
+cp -rf ~/.mozilla/firefox/902n4mo8.default-release/chrome/* ~/dev/dotfiles/firefox/chrome/
+
 echo "Done !"
