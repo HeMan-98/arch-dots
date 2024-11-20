@@ -37,7 +37,7 @@ Dotfiles, etc. from my Arch machine.
 ---
 ### Content Tree
 
-$(tree ~/dev/dotfiles)
+$(tree ~/dev/dotfiles | awk '{print$0," "}')
 
 ---
 " > ~/dev/dotfiles/README.md
