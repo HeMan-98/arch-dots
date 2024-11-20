@@ -29,4 +29,17 @@ if [ ! -d ~/dev/dotfiles/firefox/chrome ]; then
 fi
 cp -rf ~/.mozilla/firefox/902n4mo8.default-release/chrome/* ~/dev/dotfiles/firefox/chrome/
 
+# README.md
+echo "# Arch Dots
+
+Dotfiles, etc. from my Arch machine.
+
+---
+### Content Tree
+
+$(tree ~/dev/dotfiles)
+
+---
+" > ~/dev/dotfiles/README.md
+
 echo "Done !"
