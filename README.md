@@ -1,3 +1,3 @@
 # Arch Dots
 
-Dotfiles and Etc from my Arch machine.
+Dotfiles, etc. from my Arch machine.
