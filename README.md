@@ -3,6 +3,14 @@
 Dotfiles, etc. from my Arch machine.
 
 ---
+### Screenshots
+
+|     |     |
+|:---:|:---:|
+|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot0.png)|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot1.png)|
+|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot2.png)|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot3.png)|
+
+---
 ### Content Tree
 
 /home/hemanth/dev/dotfiles  
@@ -87,9 +95,14 @@ Dotfiles, etc. from my Arch machine.
 ├── pacman_explicit.packages  
 ├── pacman.packages  
 ├── paru_only.packages  
-└── README.md  
+├── README.md  
+└── screenshots  
+    ├── screenshot0.png  
+    ├── screenshot1.png  
+    ├── screenshot2.png  
+    └── screenshot3.png  
   
-16 directories, 67 files  
+17 directories, 71 files  
 
 ---
 

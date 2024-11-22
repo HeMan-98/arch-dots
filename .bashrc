@@ -26,6 +26,8 @@ alias grep='grep --color=auto'
 alias clear='clear && pokeget random'
 alias cat='bat --color=auto'
 
+set -o vi
+
 # FZF Options
 export FZF_DEFAULT_OPTS="--height 70% --reverse --preview='bat --color=always {}'"
 export FZF_CTRL_T_OPTS="--height 70% --reverse --no-preview"
