@@ -7,8 +7,8 @@ Dotfiles, etc. from my Arch machine.
 
 |     |     |
 |:---:|:---:|
-|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot0.png)|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot1.png)|
-|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot2.png)|![](https://github.com/HeMan-98/arch-dots/tree/master/screenshots/screenshot3.png)|
+|![](https://github.com/HeMan-98/arch-dots/blob/master/screenshots/screenshot0.png)|![](https://github.com/HeMan-98/arch-dots/blob/master/screenshots/screenshot1.png)|
+|![](https://github.com/HeMan-98/arch-dots/blob/master/screenshots/screenshot2.png)|![](https://github.com/HeMan-98/arch-dots/blob/master/screenshots/screenshot3.png)|
 
 ---
 ### Content Tree
