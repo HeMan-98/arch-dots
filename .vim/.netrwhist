@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/hemanth'
 let g:netrw_dirhist_6='/home/hemanth/Desktop'
 let g:netrw_dirhist_5='/home/hemanth/dev/dotfiles/.git'
 let g:netrw_dirhist_4='/home/hemanth/.config/zathura'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/proc/685/fd'
 let g:netrw_dirhist_0='/home/hemanth/Desktop'
 let g:netrw_dirhist_9='/home/hemanth'
 let g:netrw_dirhist_8='/home/hemanth/Desktop'
-let g:netrw_dirhist_7='/home/hemanth/.config/ncmpcpp'

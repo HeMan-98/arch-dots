@@ -17,7 +17,8 @@ set showmatch                                       " show the matching part of 
 set guifont=Iosevka\ 10                             " setting font
 set belloff=all                                     " switch off errorbell
 set cmdheight=1                                     " command bar height
-set laststatus=2                                    " Always show the status line
+set laststatus=2                                    " always show the status line
+set hidden                                          " to enable switching from unsaved buffers
 
 " Indentation
 set ts=4                                            " set tabs to have 4 spaces

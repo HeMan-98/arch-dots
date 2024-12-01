@@ -14,8 +14,8 @@ if [ ! -d ~/dev/dotfiles/bin ]; then
 fi
 cp -rf ~/.local/bin/* ~/dev/dotfiles/bin/
 
-# Home - Vim, Bash, sample.md
-cp -rf ~/{.vim,.vimrc,.bashrc,.sample.md} ~/dev/dotfiles/
+# Home - Vim, Bash, sample.md, tmux
+cp -rf ~/{.vim,.vimrc,.bashrc,.sample.md,.tmux.conf} ~/dev/dotfiles/
 
 # Pacman
 pacman -Q > ~/dev/dotfiles/pacman.packages
@@ -23,7 +23,7 @@ pacman -Qe > ~/dev/dotfiles/pacman_explicit.packages
 # Paru
 paru -Qm > ~/dev/dotfiles/paru_only.packages
 
-# Cascade Firefox
+# Firefox CSS
 if [ ! -d ~/dev/dotfiles/firefox/chrome ]; then
     mkdir -p ~/dev/dotfiles/firefox/chrome
 fi

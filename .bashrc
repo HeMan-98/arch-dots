@@ -11,6 +11,7 @@
 # - pkgfile
 # - bash-completion
 # - starship
+# - paru
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -25,6 +26,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias clear='clear && pokeget random'
 alias cat='bat --color=auto'
+alias parufind="paru -Slq | fzf --multi --preview='paru -Si {}' | xargs -ro paru -Si"
 
 set -o vi
 

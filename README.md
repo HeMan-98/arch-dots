@@ -81,16 +81,6 @@ Dotfiles, etc. from my Arch machine.
 │       └── zathurarc  
 ├── firefox  
 │   └── chrome  
-│       ├── includes  
-│       │   ├── cascade-colours.css  
-│       │   ├── cascade-config.css  
-│       │   ├── cascade-config-mouse.css  
-│       │   ├── cascade-floating-panel.css  
-│       │   ├── cascade-layout.css  
-│       │   ├── cascade-nav-bar.css  
-│       │   ├── cascade-responsive.css  
-│       │   ├── cascade-responsive-windows-fix.css  
-│       │   └── cascade-tabs.css  
 │       └── userChrome.css  
 ├── pacman_explicit.packages  
 ├── pacman.packages  
@@ -102,7 +92,7 @@ Dotfiles, etc. from my Arch machine.
     ├── screenshot2.png  
     └── screenshot3.png  
   
-17 directories, 71 files  
+16 directories, 62 files  
 
 ---
 
