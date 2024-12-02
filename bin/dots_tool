@@ -29,6 +29,12 @@ if [ ! -d ~/dev/dotfiles/firefox/chrome ]; then
 fi
 cp -rf ~/.mozilla/firefox/902n4mo8.default-release/chrome/* ~/dev/dotfiles/firefox/chrome/
 
+# Screenshots
+if [ ! -d ~/dev/dotfiles/screenshots ]; then
+    mkdir -p ~/dev/dotfiles/screenshots
+fi
+cp -rf ~/Pictures/Screenshots/{screenshot0.png,screenshot1.png,screenshot2.png,screenshot3.png} ~/dev/dotfiles/screenshots
+
 # README.md
 echo "# Arch Dots
 
