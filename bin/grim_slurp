@@ -7,8 +7,8 @@ scrnsht_nm="$(date +'screenshot_%Y-%m-%d-%H%M%S.png')"
 # screenshot
 slurp | grim -g - ~/Pictures/Screenshots/$scrnsht_nm
 
-# notification
+# notification & clipboard copy
 if [ -e ~/Pictures/Screenshots/$scrnsht_nm ]; then
     notify-send "Screenshot Captured..!" "File saved at ~/Pictures/Screenshots/$scrnsht_nm"
-
+    wl-copy < ~/Pictures/Screenshots/$scrnsht_nm
 fi
