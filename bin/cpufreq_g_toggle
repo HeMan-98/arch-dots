@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Script to Toggle CPUFreq Governor
+
+state=$( cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor )
+
+case $state in
+    powersave)
+        pkexec cpupower frequency-set -g performance && sleep 1
+        ;;
+    performance)
+        pkexec cpupower frequency-set -g powersave && sleep 1
+        ;;
+    *)
+        notify-send "invalid cpu freq governor"
+        ;;
+esac
+
+newstate=$( cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor )
+
+notify-send "$state => $newstate"

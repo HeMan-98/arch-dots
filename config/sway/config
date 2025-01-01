@@ -2,12 +2,16 @@
 #
 # Autotiling
 #
-exec autotiling
+exec autotiling --limit 2
 # exec_always if pgrep -x autotiling; then kill $(pgrep -x autotiling); fi && autotiling
 #
 # Launching Mako (Notification Daemon)
 #
 exec mako
+#
+# Polkit Agent
+#
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -56,8 +60,8 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run
-set $menu_1 wofi --show drun
+set $menu wofi --show drun --allow-images -D key_expand=Right
+set $menu_1 wofi --show run
 
 ### Output configuration
 #
@@ -145,6 +149,9 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     
     # Open Browser
     bindsym $mod+w exec firefox
+
+    # CPUFreq Governor Toggle
+    bindsym $mod+p exec ~/.local/bin/cpufreq_g_toggle
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

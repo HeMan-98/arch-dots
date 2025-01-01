@@ -15,6 +15,7 @@ Dotfiles, etc. from my Arch machine.
 
 /home/hemanth/dev/dotfiles  
 ├── bin  
+│   ├── cpufreq_g_toggle  
 │   ├── dots_tool  
 │   ├── grim_slurp  
 │   └── swaybg_cycle  
@@ -92,7 +93,7 @@ Dotfiles, etc. from my Arch machine.
     ├── screenshot2.png  
     └── screenshot3.png  
   
-16 directories, 62 files  
+16 directories, 63 files  
 
 ---
 
