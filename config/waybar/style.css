@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: IosevkaNerdFontPropo, Iosevka, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: IosevkaNerdFontPropo, Iosevka, FontAwesome, Roboto, Helvetica, Arial, NotoSansCJK, sans-serif;
     font-size: 14px;
     border-radius: 5px;
 }
@@ -27,7 +27,7 @@ button:hover {
 }
 
 #workspaces button {
-    min-width: 12px;
+    min-width: 16px;
     padding: 0px 8px;
     background-color: transparent;
     color: #ebdbb2;
@@ -39,7 +39,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    min-width: 24px;
+    min-width: 32px;
     background-color: #ebdbb2;
     color: #282828;
 }

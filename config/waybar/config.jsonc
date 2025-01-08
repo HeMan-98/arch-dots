@@ -5,7 +5,7 @@
     "margin-top": 5, // Waybar detach top
     "margin-left": 10, // Waybar detach left
     "margin-right": 10, // Waybar detach right
-    "height": 32, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -34,20 +34,30 @@
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "persistent-workspaces": {
+        "workspaces": {
           "1": [],
           "2": [],
           "3": [],
           "4": [],
-          "5": []
+          "5": [],
+          "6": [],
+          "7": [],
+          "8": [],
+          "9": [],
+          "10": []
         },
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "󰣑",
-            "3": "󰣎",
-            "4": "󰋑",
-            "5": "󰣏"
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
         }
     },
     "sway/window": {
