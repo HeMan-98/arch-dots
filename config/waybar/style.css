@@ -2,23 +2,23 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: IosevkaNerdFontPropo, Iosevka, FontAwesome, Roboto, Helvetica, Arial, NotoSansCJK, sans-serif;
     font-size: 14px;
-    border-radius: 5px;
+    border-radius: 18px;
 }
 
 window#waybar {
-    background-color: #282828;
-    border: 3px solid #ebdbb2;
+    background-color: alpha(#282828,0.75);
+    border: 0px solid #ebdbb2;
     color: #ebdbb2;
     transition-property: background-color;
     transition-duration: .5s;
-    border-radius: 0px;
+    border-radius: 18px;
 }
 
 button {
     /* Avoid rounded borders under each button name */
-    border: 2px solid #ebdbb2;
+    border: 0px solid #ebdbb2;
     color: #ebdbb2;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -27,7 +27,7 @@ button:hover {
 }
 
 #workspaces button {
-    min-width: 16px;
+    min-width: 18px;
     padding: 0px 8px;
     background-color: transparent;
     color: #ebdbb2;
@@ -35,17 +35,16 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: #504945;
+    background: alpha(#504945,0.75);
 }
 
 #workspaces button.focused {
-    min-width: 32px;
-    background-color: #ebdbb2;
+    background-color: alpha(#ebdbb2,0.75);
     color: #282828;
 }
 
 #workspaces button.urgent {
-    background-color: #cc241d;
+    background-color: alpha(#cc241d,0.75);
 }
 
 #clock,
@@ -62,9 +61,9 @@ button:hover {
 #scratchpad,
 #mpd {
     padding: 0px 10px;
-    background-color: #282828;
+    background-color: alpha(#504945,0.75);
     color: #ebdbb2;
-    border: 1px solid #ebdbb2;
+    border: 0px solid #ebdbb2;
     margin: 5px 0px;
 }
 
@@ -73,18 +72,22 @@ button:hover {
     margin: 0px 5px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 4px;
+    margin-left: 8px;
+}
+.modules-left > widget:last-child > #workspaces {
+    margin-left: 8px;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:first-child > #workspaces {
+    margin-right: 8px;
+}
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
+    margin-right: 8px;
 }
 
 #clock {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 #battery {
@@ -92,19 +95,19 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #282828;
-    background-color: #98971a;
+    background-color: alpha(#98971a,0.75);
 }
 
 @keyframes blink {
     to {
-        background-color: #282828;
+        background-color: alpha(#282828,0.75);
         color: #ebdbb2;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #cc241d;
+    background-color: alpha(#cc241d,0.75);
     color: #ebdbb2;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -114,7 +117,7 @@ button:hover {
 }
 
 label:focus {
-    background-color: #504945;
+    background-color: alpha(#504945,0.75);
 }
 
 #cpu {
@@ -130,7 +133,7 @@ label:focus {
 }
 
 #network.disconnected {
-    background-color: #504945;
+    background-color: alpha(#665c54,0.75);
     color: #d5c4a1;
 }
 
@@ -138,7 +141,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #504945;
+    background-color: alpha(#665c54,0.75);
     color: #d5c4a1;
 }
 
@@ -146,7 +149,7 @@ label:focus {
 }
 
 #wireplumber.muted {
-    background-color: #504945;
+    background-color: alpha(#665c54,0.75);
 }
 
 #custom-media {
@@ -163,7 +166,7 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #cc241d;
+    background-color: alpha(#cc241d,0.75);
 }
 
 #tray {
@@ -175,26 +178,26 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #cc241d;
+    background-color: alpha(#cc241d,0.75);
 }
 
 #mpd {
-    background-color: #98971a;
+    background-color: alpha(#98971a,0.75);
     color: #282828;
 }
 
 #mpd.disconnected {
-    background-color: #504945;
+    background-color: alpha(#504945,0.75);
     color: #d5c4a1;
 }
 
 #mpd.stopped {
-    background-color: #504945;
+    background-color: alpha(#504945,0.75);
     color: #d5c4a1;
 }
 
 #mpd.paused {
-    background-color: #cc241d;
+    background-color: alpha(#cc241d,0.75);
     color: #ebdbb2;
 }
 
@@ -211,17 +214,17 @@ label:focus {
 
 #privacy-item {
     padding: 0px 5px;
-    color: white;
+    color: #ebdbb2;
 }
 
 #privacy-item.screenshare {
-    background-color: #cf5700;
+    background-color: alpha(#cf5700,0.75);
 }
 
 #privacy-item.audio-in {
-    background-color: #1ca000;
+    background-color: alpha(#1ca000,0.75);
 }
 
 #privacy-item.audio-out {
-    background-color: #0069d4;
+    background-color: alpha(#0069d4,0.75);
 }

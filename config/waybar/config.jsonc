@@ -11,12 +11,11 @@
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
-        "sway/scratchpad",
-        "custom/media",
-        "mpd"
+        "sway/scratchpad" 
     ],
     "modules-center": [
-        "sway/window"
+       "custom/media",
+        "mpd"
     ],
     "modules-right": [
         "backlight",
@@ -34,7 +33,7 @@
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "workspaces": {
+        "persistent-workspaces": {
           "1": [],
           "2": [],
           "3": [],

@@ -27,9 +27,11 @@ font pango: Iosevka Medium 11
 gaps inner 10
 gaps outer 0
 #
-# Disbale Window TitleBar
+# Disbale Window TitleBar & add corner_radius
 #
-default_border pixel 3
+default_border pixel 0
+
+corner_radius 18
 #
 # Window Colors (border background text inidcator child border)
 #
@@ -37,11 +39,27 @@ client.focused              #ebdbb2ff #282828ff #ebdbb2ff #d79921ff   #ebdbb2ff
 client.focused_inactive     #ebdbb299 #28282899 #ebdbb299 #ebdbb299   #ebdbb299
 client.unfocused            #ebdbb299 #28282899 #ebdbb299 #ebdbb299   #ebdbb299
 #
-# Global Window Transparency
+# Global Window Transparency & Blurring
 #
-set $opacity 1.0
+set $opacity 0.75
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
+
+blur enable
+blur_xray disbale
+
+default_dim_inactive 0.25
+
+layer_effects "waybar" {
+    blur enable;
+    blur_xray disable;
+    corner_radius 18;
+}
+layer_effects "wofi" {
+    blur enable;
+    blur_xray disable;
+    corner_radius 18;
+}
 #
 # Mouse Cursor Theme Setting (1 Half, the other half in nwg-look)
 #
@@ -148,7 +166,7 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     bindsym $mod+Shift+d exec $menu_1
     
     # Open Browser
-    bindsym $mod+w exec firefox
+    bindsym $mod+w exec zen-browser
 
     # CPUFreq Governor Toggle
     bindsym $mod+p exec ~/.local/bin/cpufreq_g_toggle

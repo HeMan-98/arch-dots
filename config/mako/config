@@ -2,19 +2,19 @@ font=Iosevka
 markup=1
 actions=1
 icons=1
-border-size=1
-border-radius=5
+border-size=0
+border-radius=18
 border-color=#ebdbb2cc
 default-timeout=10000
 anchor=top-right
 width=500
 group-by=summary,app-name
 
-background-color=#282828bb
+background-color=#282828bf
 text-color=#ebdbb2
 
 [actionable]
-background-color=#cc241dbb
+background-color=#cc241dbf
 text-color=#ebdbb2
 
 ignore-timeout=1

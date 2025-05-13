@@ -24,7 +24,7 @@ export HISTFILESIZE=20384
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias clear='clear && pokeget random'
+alias clear='clear && echo "" && pokeget random'
 alias cat='bat --color=auto'
 alias parufind="paru -Slq | fzf --multi --preview='paru -Si {}' | xargs -ro paru -Si"
 
@@ -50,4 +50,4 @@ PS1='[\u@\h \W]\$ '
 # Starship
 eval "$(starship init bash)"
 
-pokeget random
+echo "" && pokeget random

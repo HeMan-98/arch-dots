@@ -80,9 +80,6 @@ Dotfiles, etc. from my Arch machine.
 │   │   └── style.css  
 │   └── zathura  
 │       └── zathurarc  
-├── firefox  
-│   └── chrome  
-│       └── userChrome.css  
 ├── pacman_explicit.packages  
 ├── pacman.packages  
 ├── paru_only.packages  
@@ -93,7 +90,7 @@ Dotfiles, etc. from my Arch machine.
     ├── screenshot2.png  
     └── screenshot3.png  
   
-16 directories, 63 files  
+14 directories, 62 files  
 
 ---
 
